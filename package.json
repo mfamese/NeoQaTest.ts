@@ -1,0 +1,29 @@
+{
+  "name": "qa-automation-test-cypress",
+  "version": "1.0.0",
+  "description": "Neo QA automation assessment",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open",
+    "report": "cypress run && node cypress/scripts/cucumber-report-html.js"
+  },
+  "keywords": [],
+  "author": "Neo Fintech Lab",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^19.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cucumber-html-reporter": "^7.1.1",
+    "cypress": "^13.4.0",
+    "typescript": "^5.2.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": [
+      "cypress/gherkin/*.ts"
+    ],
+    "json": {
+      "enabled": true,
+      "output": "cypress/results/json/cucumber-report.json"
+    }
+  }
+}
