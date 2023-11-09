@@ -17,13 +17,14 @@ If you encounter errors, ensure that you're running a compatible version of Node
 
 ## The task
 
-Here is a link for a demo parking app: http://www.shino.de/parkcalc/. Please take a look at the app, then complete the steps below.
+Here is a link for a demo parking app: http://www.shino.de/parkcalc/. 
+Please take a look at the app, then complete the steps below.
 
 1. Find 3 bugs in the parking app and write a bug report for each.
    1. Include all relevant information that you would normally include in a bug report.
 2. Write a small automated test suite for the parking app within this repository.
-   1. Include **at least 3** tests that pass, showing areas of the app that work correctly.
-   2. Include **only one** test that fails, proving one of the bugs you found in step 1.
+   1. Include tests for **at least two** of the selectable parking lots, using the displayed parking rates to determine the expected result of each cost calculation.
+   2. Include **at least one** test that fails, proving one of the bugs you found in step 1.
    3. You can write your tests using Gherkin or standard Cypress syntax. A simple example of each has been provided.
    4. If you wish, you can use the `commands.ts` file or create your own files to add reusable methods, indicating how you might start to construct a testing framework.
 
@@ -34,11 +35,11 @@ When you have completed this task, please follow the steps below to submit your 
 1. Write an email including the following information
    1. Your 3 bug reports
    2. Any information you'd like us to know about your approach to writing the automated test suite
-   3. A brief summary of what you would do next if you had more time on this project
+   3. A brief summary of what you would do next if you had more time to work on this project
 2. Compress the `cypress` folder of this repository into a zip file and attach it to the email
 3. Send the email to mh@neoftl.com
 
-You may be asked to present your solution at interview and we will discuss the approach you took.
+You may be asked to present your solution at interview, and we will discuss the approach you took.
 
 ## Useful links
 
